@@ -56,6 +56,10 @@ audio {
     width: 1rem;
 }
 
+.homeBtn {
+    width: 20rem;
+    height: auto;
+}
 
 /* This is for the custom font */
 
