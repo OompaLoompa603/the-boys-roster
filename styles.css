@@ -59,6 +59,82 @@ audio {
 .homeBtn {
     width: 20rem;
     height: auto;
+    margin: 5rem;
+}
+
+@media only screen and (min-width: 1880px) {
+    body {
+        margin-left: 60rem;
+        margin-right: 60rem;
+    }
+    
+    .charCell {
+        background-color: rgb(71, 71, 71);
+    }
+
+    .boysID {
+        height: 125px;
+        width: 125px;
+        margin: 0.25rem;
+    }
+
+    .boysID:hover {
+        box-shadow: 0 5px 50px 0 rgb(255, 0, 0);
+    }
+    
+    #title {
+        padding: 5rem;
+        width: 400px;
+        height: auto;
+    }
+    
+    .imgs {
+        width: 200px;
+        height: auto;
+    }
+    
+    li {
+        color: white;
+        font-size: 2rem;
+        font-family: "Special Font";
+    }
+    
+    .profileTD {
+        padding: 1rem;
+    }
+    
+    h1 {
+        color: white;
+        font-size: 6rem;
+        font-family: "Special Font";
+    }
+    
+    h3 {
+        color: white;
+        font-size: 4rem;
+        font-family: "Special Font";
+    }
+    
+    p {
+        color: white;
+        font-size: 2rem;
+        font-family: "Special Font";
+    
+    }
+    
+    audio {
+        width: 20rem;
+    }
+    
+    .homeBtn {
+        width: 20rem;
+        height: auto;
+        margin: 5rem;
+    }
+
+    .homeBtn:hover {
+        box-shadow: 0 5px 50px 0 rgb(255, 255, 255);
+    }
 }
 
 /* This is for the custom font */
