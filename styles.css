@@ -62,6 +62,81 @@ audio {
     margin: 5rem;
 }
 
+@media only screen and (min-width: 1280px) {
+    body {
+        margin-left: 40rem;
+        margin-right: 40rem;
+    }
+    
+    .charCell {
+        background-color: rgb(71, 71, 71);
+    }
+
+    .boysID {
+        height: 100px;
+        width: 100px;
+        margin: 0.25rem;
+    }
+
+    .boysID:hover {
+        box-shadow: 0 5px 50px 0 rgb(255, 0, 0);
+    }
+    
+    #title {
+        padding: 5rem;
+        width: 400px;
+        height: auto;
+    }
+    
+    .imgs {
+        width: 185px;
+        height: auto;
+    }
+    
+    li {
+        color: white;
+        font-size: 1.75rem;
+        font-family: "Special Font";
+    }
+    
+    .profileTD {
+        padding: 1rem;
+    }
+    
+    h1 {
+        color: white;
+        font-size: 4rem;
+        font-family: "Special Font";
+    }
+    
+    h3 {
+        color: white;
+        font-size: 2rem;
+        font-family: "Special Font";
+    }
+    
+    p {
+        color: white;
+        font-size: 1.75rem;
+        font-family: "Special Font";
+    
+    }
+    
+    audio {
+        width: 20rem;
+    }
+    
+    .homeBtn {
+        width: 20rem;
+        height: auto;
+        margin: 5rem;
+    }
+
+    .homeBtn:hover {
+        box-shadow: 0 5px 50px 0 rgb(255, 255, 255);
+    }
+}
+
 @media only screen and (min-width: 1880px) {
     body {
         margin-left: 60rem;
