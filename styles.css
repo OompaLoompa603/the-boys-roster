@@ -16,6 +16,7 @@ body {
     padding: 5rem;
     width: 275px;
     height: auto;
+    animation: title-load 300ms ease-out 400ms;
 }
 
 .imgs {
@@ -60,6 +61,15 @@ audio {
     width: 20rem;
     height: auto;
     margin: 5rem;
+}
+
+@keyframes title-load {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 @media only screen and (min-width: 1280px) {
