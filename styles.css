@@ -5,29 +5,46 @@ html {
 body {
     background-color: black;
     overflow-x: hidden;
+    --title-load-time: 300ms;
+    --boysID-load-time: 500ms
 }
 
 .boysID {
     height: 90px;
     width: 90px;
+    transform: scale(0);
+    animation-name: boysID-load;
+    animation-duration: var(--boysID-load-time);
+    animation-delay: var(--title-load-time);
+    animation-fill-mode: forwards;
 }
 
 #title {
     padding: 5rem;
     width: 275px;
     height: auto;
-    animation: title-load 300ms ease-out 400ms;
+    transform: scale(0);
+    animation: title-load var(--title-load-time) ease-out;
+    animation-fill-mode: forwards;
 }
 
 .imgs {
     width: 175px;
     height: auto;
+    transform: scale(0);
+    animation: img-load 300ms ease-out;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
 }
 
 li {
     color: white;
     font-size: 1.5rem;
     font-family: "Special Font";
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: text-load 300ms ease-out 400ms;
+    animation-fill-mode: forwards;
 }
 
 .profileTD {
@@ -38,30 +55,52 @@ h1 {
     color: white;
     font-size: 3rem;
     font-family: "Special Font";
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: text-load 300ms ease-out;
+    animation-fill-mode: forwards;
 }
 
 h3 {
     color: white;
     font-size: 1.75rem;
     font-family: "Special Font";
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: text-load 300ms ease-out 300ms;
+    animation-fill-mode: forwards;
 }
 
 p {
     color: white;
     font-size: 1.5rem;
     font-family: "Special Font";
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: text-load 300ms ease-out 400ms;
+    animation-fill-mode: forwards;
 
 }
 
 audio {
     width: 1rem;
+    transform: scale(0);
+    animation: img-load 300ms ease-out;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
 }
 
 .homeBtn {
     width: 20rem;
     height: auto;
     margin: 5rem;
+    transform: scale(0);
+    animation: img-load 300ms ease-out;
+    animation-delay: 700ms;
+    animation-fill-mode: forwards;
 }
+
+/*  ANIMATIONS FOR THE PAGES */
 
 @keyframes title-load {
     0% {
@@ -71,6 +110,44 @@ audio {
         transform: translateY(0%);
     }
 }
+
+@keyframes boysID-load {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes img-load {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes text-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*  ANIMATIONS FOR THE PAGES */
 
 @media only screen and (min-width: 1280px) {
     body {
